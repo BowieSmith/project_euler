@@ -13,6 +13,6 @@ def fibs_under(n):
         yield current
         current = next(g)
 
-ans = sum(x for x in fibs_under(4_000_000) if x % 2 == 0)
-
-print(ans)
+if __name__ == "__main__":
+    ans = sum(x for x in fibs_under(4_000_000) if x % 2 == 0)
+    print(ans)

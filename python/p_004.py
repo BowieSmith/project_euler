@@ -7,6 +7,6 @@ def is_palindrome(n):
             return False
     return True
 
-ans = max(a*b for a in range(100,1000) for b in range(100,1000) if is_palindrome(a*b))
-
-print(ans)
+if __name__ == "__main__":
+    ans = max(a*b for a in range(100,1000) for b in range(100,1000) if is_palindrome(a*b))
+    print(ans)

@@ -46,6 +46,6 @@ def prime_factors(n):
             factors.append(factor)
             current = current // factor
 
-ans = prime_factors(600851475143)[-1]
-
-print(ans)
+if __name__ == "__main__":
+    ans = prime_factors(600851475143)[-1]
+    print(ans)
