@@ -25,8 +25,7 @@ def primes():
 def first_factor(n):
     if n == 2:
         return -1
-    prime_gen = primes()
-    for p in prime_gen:
+    for p in primes():
         if n % p == 0:
             return p
         if p >= n ** (1/2):
