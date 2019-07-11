@@ -23,9 +23,12 @@ def product(it):
 
 # get factors using all combinations of prime factorization
 def factors(n):
+    if n < 1:
+        return set()
     prime_factors = p_003.prime_factors(n)
     factors = set()
     factors.add(1)
+    factors.add(n)
     for i in range(1, len(prime_factors) + 1):
         for prime_subset in itertools.combinations(prime_factors, i):
             factors.add(product(prime_subset))
